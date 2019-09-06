@@ -147,15 +147,15 @@ public class Employeemgmt{
 		stmt.registerOutParameter (1, Types.VARCHAR);
 	    stmt.setInt(2,srch);       
 	    stmt.execute(); 
-		int eno=stmt.getInt(1);
-		String name=stmt.getString(2);
-		System.out.println(eno+name);
-				System.out.print(" Employee number is "+stmt.getInt(1));
-				System.out.print(" Employee name is "+stmt.getString(2));
-				System.out.print(" Employee salary is "+stmt.getInt(3));
-				System.out.print(" Employee Department is "+stmt.getString(4));
-				System.out.println(" Employee Designation is "+stmt.getString(5));
-				System.out.println("-------------------------------------------------------------------------");
+		
+		String name=stmt.getString(1);
+		System.out.println(name);
+//				System.out.print(" Employee number is "+stmt.getInt(1));
+//				System.out.print(" Employee name is "+stmt.getString(2));
+//				System.out.print(" Employee salary is "+stmt.getInt(3));
+//				System.out.print(" Employee Department is "+stmt.getString(4));
+//				System.out.println(" Employee Designation is "+stmt.getString(5));
+//				System.out.println("-------------------------------------------------------------------------");
 		}catch(Exception ex){
 			ex.printStackTrace();
 		}
